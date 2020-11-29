@@ -1,8 +1,14 @@
+import { Navbar } from "./components";
+import { BrowserRouter as Router, Switch, Routes } from "react-router-dom";
+import GlobalStyle from "./GlobalStyles";
+
 const App = () => {
   return (
-    <div>
-      <h1>This is Muhammad Qasim</h1>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+      {/* <Switch></Switch> */}
+    </Router>
   );
 };
 
